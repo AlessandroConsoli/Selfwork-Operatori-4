@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Selfwork Operatori 4 </title>
+</head>
+<body>
+    
+
+<script>
+
+    let totaleGatti = prompt(`quanti sono in totale i gatti in fila?`) *1;
+    let numeroGattiPerFila = prompt(`quanti gatti contiene ogni fila?`) *1;
+
+    let numeroDiFile = Math.floor(totaleGatti / numeroGattiPerFila);
+    let rimastiFuori = totaleGatti % numeroGattiPerFila;
+    let mancanti = numeroGattiPerFila - rimastiFuori;
+    
+    console.log(`Hai un totale di ` +numeroDiFile +` file` +`\n` +`inoltre mancano ` +mancanti +` gatti per formare un'altra fila` +`\n` +`ne restano fuori ` +rimastiFuori);
+
+</script>
+
+
+</body>
+</html>
